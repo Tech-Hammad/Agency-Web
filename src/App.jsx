@@ -9,7 +9,7 @@ const App = () => {
   }, [theme]);
 
   return (
-    <div className="relative">
+    <div className="dark:bg-black relative">
       <Navbar theme={theme} setTheme={setTheme} />
     </div>
   );
