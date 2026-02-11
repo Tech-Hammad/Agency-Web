@@ -17,7 +17,7 @@ const Services = () => {
         },
         {
             title: "Content Writing",
-            description: "we help you create high-quality written content that engages your audience and drives results.",
+            description: "we help you create high-quality written content that engages your audience and drives results and manage social media campaigns.",
             icon: assets.content_icon
         },
         {
