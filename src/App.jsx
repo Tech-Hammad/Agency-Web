@@ -7,6 +7,7 @@ import OurWork from "./Components/OurWork";
 import Teams from "./Components/Teams";
 import ContactUs from "./Components/ContactUs";
 import { Toaster } from 'react-hot-toast';
+import Footer from "./Components/Footer";
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light');
@@ -25,6 +26,7 @@ const App = () => {
       <OurWork />
       <Teams />
       <ContactUs />
+      <Footer theme={theme}/>
     </div>
   );
 };
