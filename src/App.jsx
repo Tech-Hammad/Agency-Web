@@ -9,6 +9,7 @@ import ContactUs from "./Components/ContactUs";
 import { Toaster } from 'react-hot-toast';
 import Footer from "./Components/Footer";
 import Loader from "./Components/Loader";
+import CookieConsent from "./Components/CookiesConsent";
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light');
@@ -76,6 +77,7 @@ const App = () => {
           <Footer theme={theme} />
         </>
       )}
+      <CookieConsent />
 
       {/* Custome Cursor Ring*/}
       <div ref={outlineRef} className="fixed top-0 left-0 h-10 w-10 rounded-full border border-primary pointer-events-none z-[9999]"
